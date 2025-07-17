@@ -46,9 +46,9 @@ public class Create_OrganizationTest extends BaseClass{
 		Java_Utility ranNum = new Java_Utility();
 		int ran = ranNum.getRandomNum();
 		Excle_Utility ExLib = new Excle_Utility();
-	    String org_name = ExLib.getExcleFileUtility("Organization", 0, 2)+ran;
-		String org_phone = ExLib.getExcleDataUsingDataFormatter("Organization", 1, 2)+ran;
-		String org_email = ExLib.getExcleDataUsingDataFormatter("Organization", 2, 2)+ran;
+	    String org_name = ExLib.getExcleFileUtility("Organization", 0, 4)+ran;
+		String org_phone = ExLib.getExcleDataUsingDataFormatter("Organization", 1, 4)+ran;
+		String org_email = ExLib.getExcleDataUsingDataFormatter("Organization", 2, 4)+ran;
 		CreatOrganizationPage organ = new CreatOrganizationPage(driver);
 		organ.createOrganization(org_name, org_phone, org_email);
 		ValidationOrganizationPage valid = new ValidationOrganizationPage(driver);
